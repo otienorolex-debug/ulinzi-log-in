@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulinzi Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-container">
+    <section id="login-view" class="auth-view">
+      <form id="login-form">    
+        <h1>Sign in</h1>
+        <p>Please enter your details to access your Ulinzi Sport account.</p>
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" name="email" autocomplete="email" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" name="password" autocomplete="current-password" required>
+        <button type="submit">Sign in</button>
+      </form>
+      <p class="switch-prompt">Don't have an account? <a href="#register" data-view="register">Create one</a></p>
+    </section>
+
+    <section id="register-view" class="auth-view" hidden>
+      <form id="register-form">
+        <h1>Create account</h1>
+        <p>Join Ulinzi Sport by creating your account.</p>
+        <label for="register-name">Full name</label>
+        <input id="register-name" type="text" name="name" autocomplete="name" required>
+        <label for="register-email">Email</label>
+        <input id="register-email" type="email" name="email" autocomplete="email" required>
+        <label for="register-password">Password</label>
+        <input id="register-password" type="password" name="password" autocomplete="new-password" minlength="8" required>
+        <label for="register-dob">Date of birth</label>
+        <input id="register-dob" type="date" name="dateOfBirth" autocomplete="bday" required>
+        <button type="submit">Create account</button>
+      </form>
+      <p class="switch-prompt">Already have an account? <a href="#login" data-view="login">Sign in</a></p>
+    </section>
+
+    <p id="form-message" role="status" aria-live="polite"></p>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

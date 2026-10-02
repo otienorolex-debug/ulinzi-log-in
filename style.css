@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    background: #e9f1e8;
+    color: #17251c;
+    font-family: Arial, sans-serif;
+}
+
+.auth-container {
+    width: min(100%, 420px);
+    padding: 32px;
+    border: 1px solid #cbd9ca;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 14px 36px rgb(23 37 28 / 10%);
+}
+
+.auth-view[hidden] {
+    display: none;
+}
+
+h1 {
+    margin: 0 0 8px;
+    color: #174b2b;
+}
+
+form > p {
+    margin: 0 0 24px;
+    color: #536257;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin: 16px 0 6px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #aebcaf;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus {
+    border-color: #24743d;
+    outline: 3px solid rgb(36 116 61 / 18%);
+}
+
+button {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 24px;
+    border: 0;
+    border-radius: 6px;
+    background: #176331;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104c25;
+}
+
+.switch-prompt {
+    margin: 22px 0 0;
+    text-align: center;
+}
+
+a {
+    color: #176331;
+    font-weight: 700;
+}
+
+#form-message {
+    margin: 16px 0 0;
+    color: #536257;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 24px;
+    }
+}
